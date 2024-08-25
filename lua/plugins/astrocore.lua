@@ -30,6 +30,8 @@ return {
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         wrap = false, -- sets vim.opt.wrap
+        laststatus = 3,
+        splitkeep = "screen",
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
@@ -64,8 +66,11 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
-        
-        ["<Leader>fg"] = { function() require('telescope').extensions.live_grep_args.live_grep_args() end, desc = "Find grep"}
+
+        ["<Leader>fg"] = {
+          function() require("telescope").extensions.live_grep_args.live_grep_args() end,
+          desc = "Find grep",
+        },
       },
     },
   },
