@@ -14,6 +14,6 @@ return {
   { import = "astrocommunity.pack.prisma" },
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.html-css" },
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" }, // using avante instead
+  { import = "astrocommunity.completion.copilot-lua-cmp" },
   -- import/override with your plugins folder
 }
